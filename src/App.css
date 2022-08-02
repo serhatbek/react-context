@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ .app {
+  text-align: center;
+  height: 100vh;
+}
+
+.app.dark {
+  background-color: rgb(46, 43, 43);
+  color: aliceblue;
+  /* text-align: center;
+  height: 100vh; */
+}
+
+.app.light {
+  background-color: aliceblue;
+  color: rgb(46, 43, 43);
+}

@@ -1,10 +1,17 @@
 import React from 'react';
-import ThemeContext from './context/ThemeContext';
+import { ThemeProvider } from './context/ThemeContext';
+import { UserProvider } from './context/UserContext';
+
+import Container from './components/Container';
 
 const App = () => {
   return (
     <div>
-      <ThemeContext.Provider></ThemeContext.Provider>
+      <ThemeProvider>
+        <UserProvider>
+          <Container />
+        </UserProvider>
+      </ThemeProvider>
     </div>
   );
 };
